@@ -4,10 +4,49 @@
 }
 
 body{
-    background-color: aqua;
+    background-color:#595555
 }
 
 .container{
     color: white;
+    height: 100vh;
+    background-color: #595555;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; /*
+    grid-template-areas: "navigation navigation navigation navigation"
+                         "language image image icons"
+                         "language image image icons"
+                         "language image image icons"
+                         "language image image icons"
+                         "language image image icons"
+                         "language image image icons"
+                         "language image image icons";
+    grid-template-rows: (8, 1fr); */
+}
+
+#screen{
+    width: 500px;
+    height: 500px;
+}
+
+.navigation{
+    grid-area: navigation;
     background-color: aqua;
 }
+ .images{
+    grid-area: images;
+    background-color: yellow;
+ }
+
+ .icons{
+    grid-area: icons;
+    background-color: blueviolet;
+ }
+
+
+ .languages{
+    grid-area: languages;
+    background-color: blue;
+ }
+
