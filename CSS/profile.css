@@ -1,18 +1,17 @@
 *{
-    padding: 0;
+    padding:0;
     margin: 0;
 }
-
 body{
     background-color: rgb(120, 75, 75);
 }
 .container{
     color: white;
     height: 100vh;
-    background-color: rgb(68, 42, 92);
+    background-color: 282824;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* grid-template-columns: repeat(4 1f); */
+    grid-template-columns: 1f 1f 1f 1f;
     grid-template-areas: "navigation navigation navigation navigation"
                          "language image image icons"
                          "language image image icons"
@@ -24,18 +23,12 @@ body{
     grid-template-rows: repeat(8, 1fr);  
 }
 
-/* #screen{
-    width: 500px;
-    height: 500px;
-} */
-
 .navigation{
     grid-area: navigation;
     background-color: #B1ACAC;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-
 }
 
 .image{
